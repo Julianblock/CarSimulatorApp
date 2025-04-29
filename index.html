@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Simulator</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('./dark_theme.css');
+        @import url('./loading_screen.css');
+    </style>
+</head>
+<body>
+    <div id="loadingScreen">Loading...</div>
+
+    <h1>Car Simulator Trajectory Plotmap</h1>
+
+    <div class="controls">
+        <input type="number" id="timeElapsedInput" placeholder="Enter max time elapsed (default: 100)">
+        <button onclick="plotTrajectory()">Update Simulation</button>
+    </div>
+
+    <canvas id="trajectoryChart" width="800" height="400"></canvas>
+
+    <script src="./js/fetchTrajectory.js"></script>
+    <script src="./js/plotTrajectory.js"></script>
+    <script>
+        plotTrajectory();
+    </script>
+</body>
+</html>
