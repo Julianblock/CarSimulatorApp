@@ -1,75 +1,71 @@
-
-
-# 🚗 Car Simulator + Sequence Engine – Full Stack Coding Challenge  
+# 🚗✨ Car Simulator + Sequence Engine – Full Stack Coding Challenge  
 **Author:** Julian Block  
-**Stack:** Python • Flask • JavaScript • Chart.js • CSS • HTML
-
-
-**THE ORIGINAL CHALLENGE** as sent to me with a 3 hour time limit
-
-This folder contains 2 Python files. Each Python file corresonds to an assignment.
-Your goal is to complete the assignments and to return the files in a format that can be easily executed.
-
-If you prefer to solve these assignments in a language that is not Python, it's totally ok to do so.
-However, you'll have to rewrite the assigments in your preferred language and add instructions on how to execute the programs.
-
-Note: Besides the correctness of the solutions, we will evaluate code style and clarity.
-
-Good Luck!
+**Stack:** Python • Flask • JavaScript • Chart.js • CSS • HTML  
 
 ---
 
-## 🧩 Overview
+## 🎯 The Challenge  
 
-This project contains solutions to a two-part technical challenge involving:
+This repository contains solutions to a two-part technical challenge:  
 
-1. A **2D vehicle simulator** with physics-based motion
-2. A **custom numerical sequence calculator** with performance optimizations
+1. **2D Vehicle Simulator** – Simulates motion with physics-based calculations.  
+2. **Custom Sequence Calculator** – Computes terms in a recurrence relation with optimized performance.  
 
-It’s powered by a Flask backend and a modern browser-based frontend that includes dark mode styling, live charting, and asynchronous API interaction. Built to showcase full-stack skills, clean architecture, and real-time visualization.
+The goal was to deliver clean, functional, and well-documented code within a 3-hour time limit.  
 
 ---
 
-## 🔧 Tech Stack
+## 🧩 Project Overview  
 
-| Layer        | Tech                                    |
+This project showcases:  
+- 🚀 Full-stack development skills  
+- 🛠️ Clean architecture and modular design  
+- 📊 Real-time data visualization  
+
+---
+
+## 🔧 Tech Stack  
+
+| **Layer**    | **Technology**                          |
 |--------------|-----------------------------------------|
 | Backend      | Flask, Python, CORS                     |
 | Frontend     | HTML, JavaScript, Chart.js              |
 | Styling      | Custom CSS (Dark Theme + Loading UI)    |
 | APIs         | `/simulate`, `/sequence/<n>` endpoints  |
-| UX           | Async fetch, error handling, loading screen |
+| UX           | Async fetch, error handling, loading UI |
 
 ---
 
-## 💡 Features
+## 💡 Features  
 
-### 🚗 Car Simulator
-- Simulates acceleration, steering, and turn radius over time
-- Returns trajectory (x, y, velocity, angle) over a configurable time span
-- Plotted using **Chart.js** on a dark-themed interactive web UI
+### 🚗 **Car Simulator**  
+- Simulates acceleration, steering, and turn radius over time.  
+- Returns trajectory data: `(x, y, velocity, angle)` over a configurable time span.  
+- Visualized using **Chart.js** on a dark-themed, interactive web UI.  
 
-### 🔢 Sequence Engine
-- Computes the n-th term in a recurrence:  
+### 🔢 **Sequence Engine**  
+- Computes the n-th term in a recurrence relation:  
   `S_n = 3 * S_(n-1) - S_(n-2)`  
-- Time optimized to handle **n = 100,000+** using constant space
-- API endpoint returns result instantly for arbitrary n
+- Optimized for **n = 100,000+** using constant space.  
+- API endpoint returns results instantly for arbitrary `n`.  
 
 ---
 
-## 📸 UI Preview
+## 📸 UI Previews  
 
-### 🧭 Trajectory Simulation  
+### 🧭 **Trajectory Simulation**  
 ![Trajectory Chart](./screenshots/trajectory.png)  
-*Visualizes the car’s position over time as it accelerates and turns*
+*Visualizes the car’s position over time as it accelerates and turns.*  
 
-### ⏳ Loading + Input  
+### ⏳ **Loading + Input**  
 ![Loading Screen](./screenshots/loading.png)  
-*Dark mode interface with asynchronous updates*
+*Dark mode interface with asynchronous updates.*  
 
 ---
 
-## 🚀 Run Locally
+## 🚀 Getting Started  
+
+### 🛠️ **Run Locally**  
 
 ```bash
 # Install dependencies (Flask required)
@@ -77,4 +73,34 @@ pip install flask flask-cors
 
 # Run the app
 python app.py
+```
+
+### 🌐 **Access the App**  
+Once running, open your browser and navigate to:  
+`http://127.0.0.1:5000`  
+
+---
+
+## 📂 Folder Structure  
+
+```plaintext
+/CarSimulatorApp
+├── app.py                # Main Flask application
+├── static/               # Frontend assets (HTML, JS, CSS)
+├── templates/            # HTML templates
+├── screenshots/          # UI preview images
+└── README.txt            # Project documentation
+```
+
+---
+
+## 🏆 Why This Project?  
+
+This project demonstrates:  
+- **Backend mastery** with Flask and Python.  
+- **Frontend expertise** with modern JavaScript and Chart.js.  
+- **Optimization skills** for handling large-scale computations.  
+- **Clean, maintainable code** with a focus on clarity and style.  
+
+---
 

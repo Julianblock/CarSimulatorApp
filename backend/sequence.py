@@ -1,5 +1,4 @@
-#t his will calc the nth number in the sequence using the Sequence paramters set in the instructions 
-
+#this will calc the nth number in the sequence using the Sequence paramters set in the instructions 
 
 def sequence_calculator(n):
     if n == 0: return 0
